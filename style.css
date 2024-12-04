@@ -1,0 +1,129 @@
+/*Importerar font familj ifrån Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+/* Grundinställningar för body */
+body{
+    background-color: coral; /* Sätter bakgrundsfärgen på sidan */
+    max-width: 1000px; /* Maximalt bredd på body till 1000px */
+    margin: auto; /* Centrerar body horisontellt */
+    margin-top: 20px; /* Lägger till ett mellanrum på toppen */
+    padding: 30px; /* Lägger till inre marginal runt hela body */
+}
+
+/* Styling för länkar i navigation */
+nav a{
+   display: inline-block; /* Gör länkarna till inline-block så de kan ha bredder och höjder */
+   width: 100px; /* Sätter bredden på varje länk till 100px */
+   margin-bottom: 10px;  /* Lägger till ett mellanrum under varje länk */
+   text-align: center;  /* Centrerar texten i länken */
+   text-decoration: none; /* Tar bort understrykning från länkar */
+   margin-left: -8px; /* Lägger till en negativ vänstermarginal för att justera positionen */
+   padding-top: 10px; /* Lägger till toppmarginal för att skapa avstånd mellan text och kant */
+   padding-bottom: 10px; /* Lägger till bottomarginal för att skapa avstånd */
+   color: black; /* Sätter textfärgen på länkarna till svart */
+   font-family: "Martel Sans", sans-serif; /*Sätter fonten till Martel Sans och om den inte funkar blir det sans-serif */
+}
+
+a{
+    text-decoration: none; /* Tar bort understrykning från länkar */
+    color: black; /* Sätter textfärgen på länkarna till svart */
+}
+
+/* Styling för header och main sektioner */
+header ,main{
+    background-color: #f5f8bb ; /* Sätter bakgrundsfärg för header och main */
+    border-radius: 20px; /* Lägger till rundade hörn på dessa element */
+    padding: 15px; /* Lägger till inre marginal i båda elementen */
+    min-height: 100px; /* Sätter ett minimihöjd på 100px */
+}
+
+/* Styling för bilder med klassen "img" */
+.img{
+    width: 100px; /* Sätter bredden på bilden till 100px */
+    float: left;  /* Får bilden att flyta till vänster och göra plats för text */
+    margin-right: 10px; /* Lägger till ett avstånd till höger om bilden */
+    margin-top: 10px; /* Lägger till ett avstånd ovanför bilden */
+}
+
+/* Styling för listor i navigation */
+nav li{
+    display: inline; /* Gör att listobjekten visas på samma rad */
+    margin-left: 10px; /* Lägger till ett avstånd mellan listobjekten */
+}
+
+/* Styling för rubriker h1 och h2 */
+h1, h2{ 
+    font-family:'Courier New', Courier, monospace ; /* Sätter teckensnittet för rubrikerna */
+}
+
+/* Styling för main-sektionen */
+main{
+    margin-top: 20px;  /* Lägger till ett mellanrum ovanför main */
+    line-height: 1.0cm; /* Sätter linjehöjden mellan rader till 0.5 cm */
+}
+
+/* Färgsättning av rubriker och paragrafer */
+h1, h2, h3, p{
+    color: black; /* Sätter textfärgen på alla rubriker och paragrafer till svart */
+    font-family: "Martel Sans", sans-serif; /*Sätter fonten till Martel Sans och om den inte funkar blir det sans-serif */
+}
+
+/*För skärmar som max har en bredd på 800px*/
+@media only screen and (max-width: 800px){
+   /* Återställer marginaler och inre fyllningar för alla element */
+    *{
+        margin: 0; /* Tar bort alla marginaler */
+        padding: 0; /* Tar bort alla fyllningar */
+    }
+
+    /* Stil för h1 */
+    h1{
+        text-align: center; /* Centrerar texten */
+        background-color: white; /* Sätter bakgrunds färgen för h1 till vit */
+        font-size: 50px; /* Sätter fontstorleken till 50px */
+        padding-top: 20px; /* Sätter fontstorleken till 50px */
+        padding-bottom: 20px; /* Lägger till 20px padding i botten */
+        color: black; /* Sätter färgen på text till svart */
+    }
+
+    /* Dölj bilder som har klassen .img */
+    .img{
+        display: none; /* Döljer alla element med klassen "img" */
+    }
+
+    /* Stil för länkar i navigationen */
+    nav a{
+        display: inline-block; /* Gör att varje länk beter sig som en blocknivåelement */
+        width: 100%; /* Länken täcker hela bredden av elementet */
+        margin-bottom: 10px; /* Lägger till ett mellanrum på 10px under varje länk */
+        background-color: aquamarine; /*Sätter bakgrunds färgen för nav a till aquamarine */
+        color: black; /* Sätter färgen på text till svart */
+        text-align: center;  /* Centrerar texten i länken */
+        text-decoration: none; /* Tar bort understrykningen från länken */
+        margin-left: -8px; /* Justerar vänster marginal för att åtgärda eventuella layoutproblem */
+        padding-top: 10px;  /* Lägger till 10px padding på toppen av länken */
+        padding-bottom: 10px; /* Lägger till 10px padding i botten av länken */
+    }
+
+    /* Stil för h2 */
+    h2{
+        margin-top: 20px; /* Lägger till ett mellanrum på 20px ovanför h2 */
+        margin-bottom: 20px; /* Lägger till ett mellanrum på 20px under h2 */
+        text-align: center;  /* Centrerar texten */
+    }
+
+    /* Stil för h3 */
+    h3{
+        padding-top: 20px; /* Lägger till 20px padding ovanför h3 */
+        padding-bottom: 10px;
+    }
+
+    /* Stil för listor */
+    ul{
+        list-style-type: none; /* Tar bort de vanliga punktlistorna */
+        margin-top: 20px; /* Lägger till ett mellanrum på 20px ovanför listan */
+        margin-left: 0px; /* Tar bort vänstermarginalen */
+    }
+
+}
+
